@@ -1,171 +1,272 @@
-# Awesome Claude Agents - AI Development Team 🚀
+# Awesome Claude Agents 🚀 - Complete Directory (Updated August 2025)
 
-**Supercharge Claude Code with a team of specialized AI agents** that work together to build complete features, debug complex issues, and handle any technology stack with expert-level knowledge.
+A community-driven collection **Claude Code agents** and sub-agents—turn your Claude instance into an unstoppable team of domain experts! This repo catalogs plug-and-play agents, agent frameworks, and orchestration recipes contributed by the community and curated from public sources.
 
-## ⚠️ Important Notice
+The Claude Code agent ecosystem has exploded with hundreds of specialized sub-agents, frameworks, and orchestration tools. Here's the most comprehensive directory of all available Claude Code agents, repositories, guides, and resources.
 
-**This project is experimental and token-intensive.** I'm actively testing these agents with Claude subscription - expect high token consumption during complex workflows. Multi-agent orchestration can consume 10-50k tokens per complex feature. Use with caution and monitor your usage.
+### What are Claude Agents?
 
-## 🚀 Quick Start (3 Minutes)
+**Claude Agents** are specialized, task-focused AI "teammates" defined via simple Markdown+YAML files. Each agent lives in `.claude/agents/` and is scoped with a clear role, tool set, and behaviour prompt. With sub-agent support, Claude Code can now delegate complex projects to expert agents who work in parallel—just like a real engineering team!
 
-### Prerequisites
-- **Claude Code CLI** installed and authenticated
-- **Claude subscription** - required for intensive agent workflows
-- Active project directory with your codebase
-- **Optional**: [Context7 MCP](docs/dependencies.md) for enhanced documentation access
+## 🌟 Featured Agents & Repos
 
-### 1. Install the Agents
+| Name | Type | Role / Highlights | Link |
+|---|---|---|---|
+| Tech Debt Finder & Fixer | Sub-Agent | Scans codebase for debt, refactors, and automates fixes with test validation | [derek-opdee/subagent-example-script] |
+| Architecture Reviewer | Sub-Agent | Detects circular deps, generates diagrams, flags anti-patterns | [derek-opdee/subagent-example-script] |
+| Test Generator | Sub-Agent | Suggests, writes, and integrates tests for uncovered paths | [derek-opdee/subagent-example-script] |
+| Performance Optimizer | Sub-Agent | Analyzes bundle size, boosts DB/index/query speed, optimizes React | [derek-opdee/subagent-example-script] |
+| 28-Subagent Power Pack | Repo | Security, compliance, changelogs, SQL tuning & more (ready-to-use agents) | [wshobson/agents] |
+| Claude Code Dev Kit | Meta-Repo | Sets up docs, multi-agent templates, hooks & MCP server integration | [peterkrueck/Claude-Code-Development-Kit] |
+
+## 🆕 Latest & Featured Agent Collections (August 2025)
+
+### **Production-Ready Agent Collections**
+
+| Repository | Sub-Agents | Updated | Highlights |
+|---|---|---|---|
+| **[0xfurai/claude-code-subagents](https://github.com/0xfurai/claude-code-subagents)** | 100+ | Aug 2025 | Massive collection with uniform prompt format, MIT licensed, multi-language support |
+| **[wshobson/agents](https://github.com/wshobson/agents)** | 48 | Jul 2025 | Production-ready specialists with orchestration patterns and advanced workflows |
+| **[vijaythecoder/awesome-claude-agents](https://github.com/vijaythecoder/awesome-claude-agents)** | 26 | Jul 2025 | AI development team with Tech Lead, Analyst, and specialized domain experts |
+| **[davepoon/claude-code-subagents-collection](https://github.com/davepoon/claude-code-subagents-collection)** | 36 | Jul 2025 | Comprehensive collection with auto-delegation and best practices guide |
+| **[charles-adedotun/claude-code-sub-agents](https://github.com/charles-adedotun/claude-code-sub-agents)** | Full ecosystem | Jul 2025 | Workflow-stage based system mapping entire dev lifecycle |
+
+### **Specialized Frameworks & Tools**
+
+| Repository | Purpose | Key Features |
+|---|---|---|
+| **[hesreallyhim/awesome-claude-code-agents](https://github.com/hesreallyhim/awesome-claude-code-agents)** | Orchestration framework | Clean interface, sophisticated orchestration logic |
+| **[webdevtodayjason/sub-agents](https://github.com/webdevtodayjason/sub-agents)** | CLI Manager | NPM installable, context-forge integration, bulk management |
+| **[baryhuang/claude-code-by-agents](https://github.com/baryhuang/claude-code-by-agents)** | Desktop app | Multi-agent workspace, @agent mentions, local+remote agents |
+| **[Dicklesworthstone/claude_code_agent_farm](https://github.com/Dicklesworthstone/claude_code_agent_farm)** | Orchestration | Multiple Claude sessions in parallel, systematic codebase improvement |
+
+### **Individual Contributor Collections**
+
+| Repository | Sub-Agents | Specialization |
+|---|---|---|
+| **[iannuttall/claude-agents](https://github.com/iannuttall/claude-agents)** | 7 | Code refactoring, content writing, frontend design, PRD writing |
+| **[zhsama/claude-sub-agent](https://github.com/zhsama/claude-sub-agent)** | Workflow system | Spec-driven development pipeline with quality gates |
+
+## 📚 Essential Guides & Documentation
+
+### **Official Documentation**
+- **[Anthropic Sub-Agents Docs](https://docs.anthropic.com/en/docs/claude-code/sub-agents)** - Official reference with YAML templates
+- **[Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)** - Anthropic's official workflow guide
+- **[Common Workflows](https://docs.anthropic.com/en/docs/claude-code/common-workflows)** - Task-specific patterns and examples
+
+### **Community Tutorials & Deep Dives**
+
+| Guide | Author | Focus |
+|---|---|---|
+| **[Claude Code: Subagent Deep Dive](https://cuong.io/blog/2025/06/24-claude-code-subagent-deep-dive)** | cuong.io | Parallelism limits, task queuing, performance benchmarks |
+| **[Mastering Claude Code: The Sub-agent Pattern](https://enting.org/mastering-claude-code-sub-agent/)** | Enting's Blog | Hidden features, prompt templates, practical benefits |
+| **[How I use Claude Code](https://bagerbach.com/blog/how-i-use-claude-code/)** | Christian B.B. Houmann | CLAUDE.md, commands, extended thinking, project-specific patterns |
+| **[Claude Code's Custom Agent Framework Changes Everything](https://dev.to/therealmrmumba/claude-codes-custom-agent-framework-changes-everything-4o4m)** | dev.to | Enterprise applications, security, parallel execution |
+
+### **Video Tutorials**
+
+| Video | Creator | Duration | Focus |
+|---|---|---|---|
+| **[Claude Code NEW Sub Agents in 7 Minutes](https://www.youtube.com/watch?v=DNGxMX7ym44)** | Developers Digest | 7 min | Setup walkthrough, research agent demo |
+| **[Master Claude Code Sub‑Agents in 10 Minutes](https://www.youtube.com/watch?v=mEt-i8FunG8)** | Various | 10 min | Complete feature overview |
+| **[How to use Claude Code Agents](https://www.youtube.com/watch?v=tw6AJ8nxu48)** | Various | N/A | PACT framework for refined agents |
+| **[My Claude Code Sub Agents BUILD THEMSELVES](https://www.youtube.com/watch?v=7B2HJr0Y68g)** | Various | N/A | Self-building agent patterns |
+
+## 🏗️ Agent Categories & Use Cases
+
+### **Development Lifecycle Agents**
+- **Planning**: Requirements analyst, architect, tech lead, project planner
+- **Implementation**: Backend/frontend developers, API designers, database specialists
+- **Quality**: Code reviewers, testers, security auditors, performance optimizers
+- **Operations**: DevOps engineers, incident responders, deployment specialists
+- **Documentation**: Technical writers, API documenters, changelog generators
+
+### **Domain Specialists**
+- **Languages**: Python, JavaScript, TypeScript, Go, Rust, Java specialists
+- **Frameworks**: React, Vue, Django, FastAPI, Spring Boot experts
+- **Cloud**: AWS, GCP, Azure architects and troubleshooters
+- **Data**: ML engineers, data scientists, analytics specialists
+- **Security**: Penetration testers, compliance auditors, crypto experts
+
+### **Business & Marketing**
+- **Content**: Copywriters, blog authors, social media managers
+- **Sales**: Lead generators, email automators, CRM specialists
+- **Analytics**: Business analysts, growth hackers, conversion optimizers
+- **Support**: Customer service, FAQ creators, documentation writers
+
+## 🌐 Community & Platforms
+
+### **Agent Sharing Platforms**
+- **[subagents.cc](https://www.subagents.cc/)** - Dedicated Claude agent directory
+- **Reddit Communities**: r/ClaudeAI, r/programming - Active sharing and discussion
+- **GitHub Topics**: #claude-agents, #claude-code, #subagents
+
+### **Multi-Agent Orchestration Examples**
+- **[Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril)** - Open-source agentic software factory with an amazing UI that handles parallel Git worktrees for you, complete with programmatic verifications and fast review loops
+- **[Multi-Agent Orchestration System](https://www.reddit.com/r/ClaudeAI/comments/1l11fo2/how_i_built_a_multiagent_orchestration_system/)** - 4-agent VSCode terminal setup
+- **[49 Subagents Running 2.5 Hours](https://www.reddit.com/r/ClaudeAI/comments/1m8u4cx/wonderful_world_of_claude_code_subagents_running/)** - Large-scale orchestration demo
+- **[Tinybird Multi-Agent Analytics](https://www.tinybird.co/blog-posts/multi-agent-claude-code-tinybird-code)** - Real-world analytics integration
+
+## 🔧 Advanced Patterns & Workflows
+
+### **Orchestration Patterns**
+- **Sequential**: Agent A → Agent B → Agent C → Result
+- **Parallel**: Multiple agents execute simultaneously, merge results
+- **Conditional**: Dynamic routing based on analysis
+- **Review & Validation**: Primary agent → Review agent → Final result
+
+### **Performance Optimization**
+- **Context Preservation**: Separate context windows prevent pollution
+- **Tool Scoping**: Limit permissions to necessary tools only
+- **Batch Processing**: Queue tasks efficiently (10 parallel max)
+- **Smart Delegation**: Automatic vs. explicit agent invocation
+
+## 📊 Quick Reference
+
+### **Most Popular Repositories (by stars/usage)**
+1. **wshobson/agents** - 248+ stars, production-ready
+2. **iannuttall/claude-agents** - 248 stars, community favorite
+3. **0xfurai/claude-code-subagents** - Newest, largest collection
+4. **vijaythecoder/awesome-claude-agents** - AI development focus
+
+### **Best Starting Points**
+- **Beginners**: iannuttall/claude-agents (7 agents, simple setup)
+- **Production Teams**: wshobson/agents (48 agents, enterprise patterns)
+- **Maximum Coverage**: 0xfurai/claude-code-subagents (100+ agents)
+- **Development Teams**: vijaythecoder/awesome-claude-agents (orchestrated workflow)
+
+## 🛠️ Installation & Setup
+
+### **Clone Popular Collections**
 ```bash
-git clone https://github.com/vijaythecoder/awesome-claude-agents.git
+# 100+ agent mega-collection
+git clone https://github.com/0xfurai/claude-code-subagents.git ~/.claude/agents/mega-pack
+
+# Production-ready 48-agent collection
+git clone https://github.com/wshobson/agents ~/.claude/agents/wh-production
+
+# AI development team (26 agents)
+git clone https://github.com/vijaythecoder/awesome-claude-agents ~/.claude/agents/ai-team
+
+# Comprehensive collection (36 agents) 
+git clone https://github.com/davepoon/claude-code-subagents-collection ~/.claude/agents/comprehensive
 ```
 
-#### Option A: Symlink (Recommended - auto-updates)
-
-**macOS/Linux:**
+### **Install Management Tools**
 ```bash
-# Create agents directory if it doesn't exist (preserves existing agents)
-mkdir -p ~/.claude/agents
+# CLI manager for sub-agents
+npm install -g claude-sub-agents-manager
 
-# Symlink the awesome-claude-agents collection
-ln -sf "$(pwd)/awesome-claude-agents/agents/" ~/.claude/agents/awesome-claude-agents
+# Or clone the manager
+git clone https://github.com/webdevtodayjason/sub-agents
 ```
 
-**Windows (PowerShell):**
-```powershell
-# Create agents directory
-New-Item -Path "$env:USERPROFILE\.claude\agents" -ItemType Directory -Force
+Quick-Start Recipes
 
-# Create symlink
-cmd /c mklink /D "$env:USERPROFILE\.claude\agents\awesome-claude-agents" "$(Get-Location)\awesome-claude-agents\agents"
-```
-
-#### Option B: Copy (Static - no auto-updates)
+1. Create a ProjectLocal Sub-Agent
 ```bash
-# Create agents directory if it doesn't exist
-mkdir -p ~/.claude/agents
-
-# Copy all agents
-cp -r awesome-claude-agents/agents ~/.claude/agents/awesome-claude-agents
-```
-
-### 2. Verify Installation
-```bash
-claude /agents
-# Should show all 24 agents.
-```
-
-### 3. Initialize Your Project
-**Navigate** to your **project directory** and run the following command to configure your AI team:
-
-```bash
-claude "use @agent-team-configurator and optimize my project to best use the available subagents."
-```
-
-### 4. Start Building
-```bash
-claude "use @agent-tech-lead-orchestrator and build a user authentication system"
-```
-
-Your AI team will automatically detect your stack and use the right specialists!
-
-## 🎯 How Auto-Configuration Works
-
-The @agent-team-configurator automatically sets up your perfect AI development team. When invoked, it:
-
-1. **Locates CLAUDE.md** - Finds existing project configuration and preserves all your custom content outside the "AI Team Configuration" section
-2. **Detects Technology Stack** - Inspects package.json, composer.json, requirements.txt, go.mod, Gemfile, and build configs to understand your project
-3. **Discovers Available Agents** - Scans ~/.claude/agents/ and .claude/ folders, building a capability table of all available specialists
-4. **Selects Specialists** - Prefers framework-specific agents over universal ones, always includes @agent-code-reviewer and @agent-performance-optimizer for quality assurance
-5. **Updates CLAUDE.md** - Creates a timestamped "AI Team Configuration" section with your detected stack and a Task|Agent|Notes mapping table
-6. **Provides Usage Guidance** - Shows you the detected stack, selected agents, and gives sample commands to start building
-
-
-## 👥 Meet Your AI Development Team
-
-### 🎭 Orchestrators (3 agents)
-- **[Tech Lead Orchestrator](agents/orchestrators/tech-lead-orchestrator.md)** - Senior technical lead who analyzes complex projects and coordinates multi-step development tasks
-- **[Project Analyst](agents/orchestrators/project-analyst.md)** - Technology stack detection specialist who enables intelligent agent routing
-- **[Team Configurator](agents/orchestrators/team-configurator.md)** - AI team setup expert who detects your stack and configures optimal agent mappings
-
-### 💼 Framework Specialists (13 agents)
-- **Laravel (2 agents)**
-  - **[Backend Expert](agents/specialized/laravel/laravel-backend-expert.md)** - Comprehensive Laravel development with MVC, services, and Eloquent patterns
-  - **[Eloquent Expert](agents/specialized/laravel/laravel-eloquent-expert.md)** - Advanced ORM optimization, complex queries, and database performance
-- **Django (3 agents)**
-  - **[Backend Expert](agents/specialized/django/django-backend-expert.md)** - Models, views, services following current Django conventions
-  - **[API Developer](agents/specialized/django/django-api-developer.md)** - Django REST Framework and GraphQL implementations
-  - **[ORM Expert](agents/specialized/django/django-orm-expert.md)** - Query optimization and database performance for Django applications
-- **Rails (3 agents)**
-  - **[Backend Expert](agents/specialized/rails/rails-backend-expert.md)** - Full-stack Rails development following conventions
-  - **[API Developer](agents/specialized/rails/rails-api-developer.md)** - RESTful APIs and GraphQL with Rails patterns
-  - **[ActiveRecord Expert](agents/specialized/rails/rails-activerecord-expert.md)** - Complex queries and database optimization
-- **React (2 agents)**
-  - **[Component Architect](agents/specialized/react/react-component-architect.md)** - Modern React patterns, hooks, and component design
-  - **[Next.js Expert](agents/specialized/react/react-nextjs-expert.md)** - SSR, SSG, ISR, and full-stack Next.js applications
-- **Vue (3 agents)**
-  - **[Component Architect](agents/specialized/vue/vue-component-architect.md)** - Vue 3 Composition API and component patterns
-  - **[Nuxt Expert](agents/specialized/vue/vue-nuxt-expert.md)** - SSR, SSG, and full-stack Nuxt applications
-  - **[State Manager](agents/specialized/vue/vue-state-manager.md)** - Pinia and Vuex state architecture
-
-### 🌐 Universal Experts (4 agents)
-- **[Backend Developer](agents/universal/backend-developer.md)** - Polyglot backend development across multiple languages and frameworks
-- **[Frontend Developer](agents/universal/frontend-developer.md)** - Modern web technologies and responsive design for any framework
-- **[API Architect](agents/universal/api-architect.md)** - RESTful design, GraphQL, and framework-agnostic API architecture
-- **[Tailwind Frontend Expert](agents/universal/tailwind-css-expert.md)** - Tailwind CSS styling, utility-first development, and responsive components
-
-### 🔧 Core Team (4 agents)
-- **[Code Archaeologist](agents/core/code-archaeologist.md)** - Explores, documents, and analyzes unfamiliar or legacy codebases
-- **[Code Reviewer](agents/core/code-reviewer.md)** - Rigorous security-aware reviews with severity-tagged reports
-- **[Performance Optimizer](agents/core/performance-optimizer.md)** - Identifies bottlenecks and applies optimizations for scalable systems
-- **[Documentation Specialist](agents/core/documentation-specialist.md)** - Crafts comprehensive READMEs, API specs, and technical documentation
-
-**Total: 24 specialized agents** working together to build your projects!
-
-[Browse all agents →](agents/)
-
-
-## 🔥 Why Teams Beat Solo AI
-
-- **Specialized Expertise**: Each agent masters their domain with deep, current knowledge
-- **Real Collaboration**: Agents coordinate seamlessly, sharing context and handing off tasks
-- **Tailored Solutions**: Get code that matches your exact stack and follows its best practices
-- **Parallel Execution**: Multiple specialists work simultaneously for faster delivery
-
-## 📈 The Impact
-
-- **Ship Faster** - Complete features in minutes, not days
-- **Better Code Quality** - Every line follows best practices
-- **Learn As You Code** - See how experts approach problems
-- **Scale Confidently** - Architecture designed for growth
-
-## 📚 Learn More
-
-- [Creating Custom Agents](docs/creating-agents.md) - Build specialists for your needs  
-- [Best Practices](docs/best-practices.md) - Get the most from your AI team
-
-## 💬 Join The Community
-
-- ⭐ **Star this repo** to show support
-- 🐛 [Report issues](https://github.com/vijaythecoder/awesome-claude-agents/issues)
-- 💡 [Share ideas](https://github.com/vijaythecoder/awesome-claude-agents/discussions)
-- 🎉 [Success stories](https://github.com/vijaythecoder/awesome-claude-agents/discussions/categories/show-and-tell)
-
-## 📄 License
-
-MIT License - Use freely in your projects!
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=vijaythecoder/awesome-claude-agents&type=Date)](https://www.star-history.com/#vijaythecoder/awesome-claude-agents&Date)
+mkdir -p .claude/agents
+cat > .claude/agents/code-reviewer.md <<'EOF'
 ---
+name: code-reviewer
+description: "Use proactively to review new pull requests for style, security, and test coverage."
+tools: grep, view, edit, mcp-gemini
+---
+You are a senior code reviewer. Provide inline comments and suggest fixes...
+EOF
+```
 
-<p align="center">
-  <strong>Transform Claude Code into an AI development team that ships production-ready features</strong><br>
-  <em>Simple setup. Powerful results. Just describe and build.</em>
-</p>
+Any request that includes “review” language will now trigger this agent automatically.
 
-<p align="center">
-  <a href="https://github.com/vijaythecoder/awesome-claude-agents">GitHub</a> •
-  <a href="docs/creating-agents.md">Documentation</a> •
-  <a href="https://github.com/vijaythecoder/awesome-claude-agents/discussions">Community</a>
-</p>
+2. Clone Community Packs
+```bash
+# Download Derek Dee’s power pack
+mkdir -p ~/.claude/agents
+curl -sL https://raw.githubusercontent.com/derek-opdee/subagent-example-script/main/sub-agent-tech-debt-finder-fixer.md -o ~/.claude/agents/tech-debt.md
+
+# Download W. Shobson’s 28-agent bundle
+git clone https://github.com/wshobson/agents ~/.claude/agents/wh-bundle
+```
+
+3. Invoke Explicitly
+```text
+> Use the test-generator sub agent to create Jest tests for the new Cart module
+```
+
+or launch several agents at once:
+
+```text
+> Spawn 3 subagents:
+> 1. Security audit
+> 2. Lint & style check
+> 3. Bundle size analysis
+```
+
+Claude will queue and run up to 10 tasks in parallel.
+
+Directory Structuring Tips
+
+- Project agents (.claude/agents/) take priority over user-level agents (~/.claude/agents/).
+- Prefix agent files with numbers (like 01_, 02_) to sort their order in the /agents listing.
+- Keep system prompts brief; long role descriptions increase token use.
+- Limit access to only the necessary tools for each agent to maintain security and efficiency.
+
+Common Pitfalls \& Solutions
+
+
+| Issue | Cause | Solution |
+| :-- | :-- | :-- |
+| Sub-agent ignores task | Vague description | Use explicit trigger phrases like “use proactively for X” |
+| Token blow-ups | Overly long system prompts | Reuse boilerplate; make role descriptions concise |
+| No output merge | Each agent authors a full plan | Add a step where the main agent merges all findings |
+| Max parallelism at 10 | System-imposed task cap | Batch remaining tasks; more start as others finish |
+
+
+
+### 4. Mix, Match, and Share!
+Mix and match roles, tweak YAML front-matter, and contribute your own agents back to this directory!
+
+## ✨ Tips for Creating Great Agents
+
+- **Specialise Roles:** “Proactively review PRs for security and lint errors,” “only optimize SQL queries in src/db/.”
+- **Limit Permissions:** List only the tools/commands each agent truly needs for maximum safety.
+- **Keep Context Lean:** Set concise system prompts to control token cost per spawn.
+- **Provide Dry-Run / Interactive Modes:** Where possible, so users stay in control.
+
+## 🚀 The Claude Agent Ecosystem (August 2025)
+
+This directory represents the complete ecosystem as of August 2025. The Claude Code agent community continues to grow rapidly, with new repositories, tools, and patterns emerging weekly. 
+
+### **Future Developments & Emerging Trends**
+- **Agent Marketplaces**: Community-driven agent sharing platforms
+- **Cross-Platform Integration**: Agents working across different development environments  
+- **Self-Improving Agents**: Agents that modify and optimize themselves
+- **Multi-Model Orchestration**: Different Claude models for different agent roles
+- **Real-Time Collaboration**: Multiple users working with shared agent teams
+
+For the latest updates, monitor the GitHub repositories and Reddit communities listed in the Community & Platforms section above.
+
+## 🤝 Contributing
+
+- Fork this repo, add your `my-unique-agent.md` files to the main directory, and open a PR.
+- Include a short description and a working example in each agent file.
+- Want your own agent repo included? Submit a link and summary via PR or issue.
+
+
+## License
+
+MIT License for this directory. Individual agent files may contain separate copyright/attribution info.
+
+## Credits
+
+Big thanks to everyone building and open-sourcing specialist Claude agents—your work powers this community!  
+Want to be featured? Suggest your repo or agent file via PR or issue.
+
+: https://github.com/derek-opdee/subagent-example-script  
+: https://github.com/wshobson/agents  
+: https://github.com/peterkrueck/Claude-Code-Development-Kit
+
+> “The most powerful Claude agents feel like hiring a team of experts—but you get code reviews, migrations, and tests done in minutes.”  
+> – Community Contributor
+
+*Happy hacking! Add, remix, and power up your Claude!*
